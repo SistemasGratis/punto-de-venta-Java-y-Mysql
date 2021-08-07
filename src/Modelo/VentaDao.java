@@ -155,7 +155,7 @@ public class VentaDao {
             Date date = new Date();
             FileOutputStream archivo;
             String url = FileSystemView.getFileSystemView().getDefaultDirectory().getPath();
-            File salida = new File(url + "venta.pdf");
+            File salida = new File(url + File.separator + "venta.pdf");
             archivo = new FileOutputStream(salida);
             Document doc = new Document();
             PdfWriter.getInstance(doc, archivo);
